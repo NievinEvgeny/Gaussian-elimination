@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 #define n 3 //разрядность матрицы
 
 int main()
@@ -34,14 +34,14 @@ int main()
 
     for (k = 0; k < n; k++)
     {
-        x = abs(a[k][k]);
+        x = fabs(a[k][k]);
         i = k;
         for (j = k + 1; j < n; j++)
         {
-            if (abs(a[j][k]) > x)
+            if (fabs(a[j][k]) > x)
             {
                 i = j;
-                x = abs(a[j][k]);
+                x = fabs(a[j][k]);
             }
         }
 
