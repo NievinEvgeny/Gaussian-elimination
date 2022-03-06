@@ -1,4 +1,4 @@
 all: matrix.c
-		gcc -Wall -o matrix $^
+		gcc -Wall -o matrix $^ -lm
 clean:
 		rm matrix
